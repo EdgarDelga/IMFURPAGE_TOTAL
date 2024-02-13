@@ -1,0 +1,389 @@
+:root{
+
+    --color-font: rgb(255, 255, 255);
+    --color-tittle-yellowFont: rgb(208, 148, 84);
+    --Color-Txt: rgb(255, 255, 255);
+    --Color-TxtAct: rgb(158, 53, 80);
+    --Color-AMARILLO: rgb(195,144,87);
+    --Color-Rojo-Claro: rgb(146,31,60);
+    --Color-Rojo-Oscuro: rgb(124,15,49);
+    --Color-AMARILLO-Oscuro: rgb(158, 116, 68);
+
+}
+
+@keyframes mostrar {
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.txt{
+    color: var(--color-font);
+}
+
+.tittletxt{
+    color: var(--color-tittle-yellowFont);
+    font-weight: 900;
+}
+
+.padding{
+    padding-top: 7rem;
+}
+.orden{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.img{
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.945);
+}
+
+.img-carrusel{
+    width: 100%;
+    height: 80%;
+}
+
+/* Establece un tamaño específico para las imágenes dentro del carrusel */
+.carousel-inner img {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    height: 100%; /* Establece la altura al 100% del contenedor */
+    object-fit: cover; /* Ajusta la imagen manteniendo la proporción y cubriendo el contenedor */
+}
+
+/* Opcional: Puedes establecer un tamaño específico para el contenedor del carrusel */
+.carousel-inner {
+    width: 100%; /* Establece el ancho del contenedor al 100% del padre */
+    height: auto; /* Establece la altura deseada del contenedor */
+}
+
+/* Otras reglas de estilo según sea necesario */
+.carousel-caption {
+    color: #fff; /* Establece el color del texto en las leyendas */
+}
+
+.background{
+    background-color: rgba(0, 0, 0, 0.13);
+    filter: blur(100%);
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+.tag{
+    color: black;
+    text-decoration: none;
+    transition: ease-out .2s;
+}
+
+.tag:hover{
+    color: aliceblue;
+}
+
+#paddingleft{
+    padding-right: 2rem;
+}
+
+#titulo1{
+    font-size: 59px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: Fuente-IMFUR-Weight;
+}
+
+#titulo2{
+    font-size: 33px;
+    text-justify: inter-word;
+    font-family: Fuente-IMFUR-Italica;
+}
+
+#contenido1{
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: Fuente-IMFUR-Italica;
+}
+
+#margen1{
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    transition: ease-in-out 1s;
+    animation: mostrar 1s ease-in-out forwards;
+}
+
+#margen2{
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+    transition: ease-in-out 1s;
+    animation: mostrar 1s ease-in-out forwards;
+}
+
+#hashtag{
+    padding-top: 5rem;
+    font-family: Fuente-IMFUR-Weight;
+    font-size: 35px;
+    color: var(--Color-AMARILLO);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.644);
+}
+
+#stronghashtag{
+    font-weight: 800;
+    color: var(--Color-Txt);
+}
+
+#mision{
+    text-align: justify;
+    text-justify:inter-word;
+    user-select: none;
+    padding-right: 2rem;
+}
+
+#vision{
+    text-align: justify;
+    text-justify:inter-word;
+    user-select: none;
+    padding-right: 2rem;
+}
+
+#valores{
+    text-align: justify;
+    text-justify:inter-word;
+    user-select: none;
+}
+
+#textos3{
+    padding-top: 3rem;
+}
+
+@keyframes show {
+
+        0%{
+            opacity: 0;
+            scale: 25%;
+        }
+        70%{
+            opacity: 1;
+            scale:100%
+        }
+}
+
+#textos3{
+    view-timeline-name: --txttrans;
+    view-timeline-axis: --block;
+
+    animation-timeline: --txttrans;
+    animation-name: show;
+}
+
+
+
+@font-face {
+    font-family: Fuente-IMFUR-Italica;
+    src: url(/src/assets/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Fuente-IMFUR-Weight;
+    src: url(/src/assets/Montserrat-VariableFont_wght.ttf);
+}
+
+#contAnimacion{
+    opacity: 0;
+    transform: translateX(-40%);
+    animation: mostrar 1s ease-out forwards;
+}
+
+
+.space-100{
+    letter-spacing: 3pt;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.space-1{
+    letter-spacing: 1pt;
+}
+
+.fuente-Italica{
+    font-family: Fuente-IMFUR-Italica;
+}
+
+.titulos3{
+    font-size: 60px;
+    padding-top: 4rem;
+}
+
+.contenedores{
+    width: 100%;
+}
+
+.contenedorDefs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.width-titulos3{
+    width: 25%;
+    margin-right: 8rem;
+}
+
+#valores{
+    margin-right: 0rem;
+}
+
+.tamaño{
+    width: 20%;
+    height: auto;
+}
+
+#carouselExample{
+    width: auto;
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    background-color: var(--Color-AMARILLO);
+}
+
+.eventos1{
+    padding-top: 4rem ;
+    width: 100%;
+}
+
+.carousel-control.prev{
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+
+#contenedor-contenido1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    transform: translateX(-20%);
+    opacity: 0;
+    animation: translacionX 1s ease-in-out forwards;
+}
+
+@keyframes translacionX {
+    100%{transform: translateX(0%); opacity: 1;}
+}
+
+#cont-eventos{
+    width: 40%;
+    margin-left: 10rem;
+}
+
+#pie-de-pagina{
+    width: 80%;
+    font-size: 12px;
+    margin-top: 1rem;
+}
+
+.imagenes-eventos{
+    border-radius: .3rem;
+}
+
+.display-flex-row{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.padding-1rem{
+    padding: 1rem;
+}
+
+.puntos-carrusel{
+    user-select: none;
+    color: var(--Color-Txt);
+    transition: ease-out .5s;
+    padding-top: 3rem;
+}
+
+.puntos-carrusel-change{
+    font-size: 200px;
+}
+
+.footer-Container{
+    width: 100%;
+    height: 15rem;
+    background-color: var(--Color-Rojo-Oscuro);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-Element{
+    display: flex;
+    flex-direction: row;
+}
+
+.element{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.hidden-yes{
+    display: none;
+}
+
+.etiquetas-footer{
+    text-decoration: none;
+    color: var(--Color-Txt);
+    font-family: Fuente-IMFUR-Italica;
+    transition: ease-in-out .3s;
+    margin-bottom: .3rem;
+}
+.etiquetas-footer:hover{
+    color: var(--Color-AMARILLO);
+}
+
+.txt-footer{
+    color: var(--Color-Txt);
+    font-family: Fuente-IMFUR-Italica;
+    margin: 0;
+}
+
+.iconos-footer{
+    width: 20%;
+    padding: .3rem;
+    transition: ease-in-out .2s;
+}
+
+.iconos-footer:hover{
+    filter: opacity(.5);
+    cursor: pointer;
+}
+
+#columnas-footer{
+    margin: 0;
+}
+
+.carousel-caption{
+    margin-top: 20rem;
+}
+
+.font-Weight{
+    font-family:  Fuente-IMFUR-Italica;
+}
